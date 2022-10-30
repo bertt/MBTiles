@@ -1,31 +1,36 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>bertt.MBTiles</PackageId>
     <Authors>Bert Temme</Authors>
     <Company />
     <Product>MBTiles</Product>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <FileVersion>2.0.0.0</FileVersion>
     <RepositoryUrl>https://github.com/bertt/MBTiles</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Description>.NET Standard Library for reading/writing MBTiles files
+    <Description>.NET 6 Library for reading/writing MBTiles files
 </Description>
     <PackageProjectUrl>https://github.com/bertt/MBTiles</PackageProjectUrl>
     <PackageTags>MBTiles</PackageTags>
+    <Version>2.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Data.SQLite" Version="1.0.112" />
-    <PackageReference Include="tilebelt" Version="1.3.4" />
+    <None Remove="schema.sql" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="schema.sql">
+    <Content Include="schema.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SQLite" Version="1.0.116" />
+    <PackageReference Include="tilebelt" Version="1.3.4" />
   </ItemGroup>
 
 </Project>

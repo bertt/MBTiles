@@ -1,7 +1,6 @@
-﻿namespace MBTiles.Core
+﻿namespace MBTiles.Core;
+
+public static class MBTilesReader
 {
-    public static class MBTilesReader
-    {
-        // todo
-    }
+    // todo
 }

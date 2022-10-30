@@ -1,6 +1,6 @@
 # MBTiles
 
-.NET Standard Library for reading/writing MBTiles files
+.NET 6 Library for reading/writing MBTiles files
 
 ## NuGet
 
@@ -18,3 +18,9 @@ MBTilesWriter.WriteTile(conn, t, content1);
 - System.Data.Sqlite https://www.nuget.org/packages/System.Data.SQLite/
 
 - Tilebelt  https://www.nuget.org/packages/tilebelt/
+
+## History
+
+2022-10-30: release 2.0, to .NET 6
+
+2020-04-18: release 1.0
