@@ -1,18 +1,35 @@
 ﻿using System;
 using System.Data;
 using System.Data.SQLite;
-using System.IO;
 using Tiles.Tools;
 
 namespace MBTiles.Core;
 
 public static class MBTilesWriter
 {
+
+    private static string sqlSchema = @"BEGIN;
+
+CREATE TABLE IF NOT EXISTS tiles (
+   zoom_level integer,
+   tile_column integer,
+   tile_row integer,
+   tile_data blob
+);
+
+CREATE TABLE IF NOT EXISTS metadata (
+    name text,
+    value text
+);
+
+CREATE UNIQUE INDEX IF NOT EXISTS tile_index ON tiles (zoom_level, tile_column, tile_row);
+CREATE UNIQUE INDEX IF NOT EXISTS name ON metadata (name);
+
+COMMIT;";
+
     public static SQLiteConnection CreateDatabase(string db, Metadata metadata)
     {
-        var schema = File.ReadAllText("schema.sql");
-
-        var sqliteConnection = CreateDatabase(db, schema);
+        var sqliteConnection = CreateDatabase(db, sqlSchema);
         sqliteConnection.Open();
         InsertMetadata(sqliteConnection, metadata);
         sqliteConnection.Close();

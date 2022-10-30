@@ -1,0 +1,12 @@
+{
+  "name": "/data/tiles_gen",
+  "description": "/data/tiles_gen",
+  "version": "2",
+  "minzoom": "0",
+  "maxzoom": "17",
+  "center": "4.818878,52.344569,17",
+  "bounds": "3.307947,50.750301,7.227499,53.576423",
+  "type": "overlay",
+  "format": "pbf",
+  "json": "{\"vector_layers\": [ { \"id\": \"admin\", \"description\": \"Administrative boundaries POLYGON\", \"minzoom\": 0, \"maxzoom\": 17, \"fields\": {\"lod1\": \"String\", \"name\": \"String\", \"original_id\": \"String\", \"z_index\": \"Number\"} }, { \"id\": \"infra\", \"description\": \"Infrastructure LINESTRING\", \"minzoom\": 0, \"maxzoom\": 17, \"fields\": {\"lod1\": \"String\", \"lod2\": \"String\", \"name\": \"String\", \"original_id\": \"String\", \"z_index\": \"Number\"} }, { \"id\": \"label\", \"description\": \"Labels POINT\", \"minzoom\": 0, \"maxzoom\": 17, \"fields\": {\"lod1\": \"String\", \"lod2\": \"String\", \"name\": \"String\", \"original_id\": \"String\", \"rotation\": \"Number\", \"z_index\": \"Number\"} }, { \"id\": \"terrain\", \"description\": \"Terrain POLYGON\", \"minzoom\": 0, \"maxzoom\": 17, \"fields\": {\"lod1\": \"String\", \"lod2\": \"String\", \"original_id\": \"String\", \"z_index\": \"Number\"} }, { \"id\": \"urban\", \"description\": \"Urban POLYGON\", \"minzoom\": 0, \"maxzoom\": 17, \"fields\": {\"lod1\": \"String\", \"lod2\": \"String\", \"original_id\": \"String\", \"z_index\": \"Number\"} }, { \"id\": \"water\", \"description\": \"Water POLYGON\", \"minzoom\": 0, \"maxzoom\": 17, \"fields\": {\"lod1\": \"String\", \"original_id\": \"String\", \"z_index\": \"Number\"} },{ \"id\": \"water-line\", \"description\": \"Water LINESTRING\", \"minzoom\": 0, \"maxzoom\": 17, \"fields\": {\"lod1\": \"String\", \"original_id\": \"String\", \"z_index\": \"Number\"} } ]}"
+}

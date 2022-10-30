@@ -7,26 +7,16 @@
     <Authors>Bert Temme</Authors>
     <Company />
     <Product>MBTiles</Product>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <FileVersion>2.0.0.0</FileVersion>
+    <AssemblyVersion>2.0.2.0</AssemblyVersion>
+    <FileVersion>2.0.2.0</FileVersion>
     <RepositoryUrl>https://github.com/bertt/MBTiles</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <Description>.NET 6 Library for reading/writing MBTiles files
 </Description>
     <PackageProjectUrl>https://github.com/bertt/MBTiles</PackageProjectUrl>
     <PackageTags>MBTiles</PackageTags>
-    <Version>2.0.0</Version>
+    <Version>2.0.2</Version>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="schema.sql" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="schema.sql">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Data.SQLite" Version="1.0.116" />
